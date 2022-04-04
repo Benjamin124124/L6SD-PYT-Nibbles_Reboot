@@ -8,7 +8,7 @@ WIN_Y = 600
 WIN = pygame.display.set_mode((WIN_X,WIN_Y))
 pygame.display.set_caption('snake game')
 #I know the image is misleading, but it was the only image I could find that was 800x600
-menubg = pygame.image.load("ProjectImages\qbasic-nibbles.png")
+menubg = pygame.image.load("ProjectImages\\Nibbles-Reboot-Menu-Background.png")
 
 menufont = pygame.font.SysFont('monospace', 40, bold= True)
 scorefont = pygame.font.SysFont('monospace', 20, bold= True)
@@ -32,7 +32,7 @@ def main_menu():
         WIN.fill((0,0,0))
         WIN.blit(menubg, (0, 0))
 
-        main_menu_message = menufont.render('Click Mouse to start the game' , True , (255,255,255))
+        main_menu_message = menufont.render('Click Mouse to start' , True , (255,255,255))
         font_pos = main_menu_message.get_rect(center=(WIN_X//2, WIN_Y//3))
         WIN.blit(main_menu_message , font_pos)
         pygame.display.update()
